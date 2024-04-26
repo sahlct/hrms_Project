@@ -236,8 +236,48 @@ body{
         display: block;
     }
     .containerLogin{
-        height: 550px;
-        width: 90%;
+        width: 100%;
+        border-radius: 0;
+        height: 100vh;
+    }
+    .containerLogin input{
+        max-width: 400px;
+    }
+    .mainContainer{
+        align-items: flex-start;
+        justify-content: flex-start;
+    }
+    .containerLogin form{
+        justify-content: flex-start;
+    }
+    .headings h1{
+        font-size: 15px !important;
+        text-align: center;
+    }
+    .headings{
+        margin-top: 50px;
+        width: 100%;
+        justify-content: space-around;
+        align-items: center;
+    }
+    .containerLogin button{
+        position: absolute;
+        bottom: 100px;
+        width: 80%;
+        max-width: 400px;
+    }
+    .bottomText{
+        position: absolute;
+        bottom: 30px;
+    }
+    .inputContainer{
+        margin-top: 20px;
+    }
+    .regText{
+        margin-top: 50px;
+    }
+    .validText{
+        text-decoration: underline;
     }
 }
 

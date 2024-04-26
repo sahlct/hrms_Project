@@ -13,25 +13,32 @@ export default function Home() {
     <div className={`containerLogin ${isSignUp ? 'active' : ''}`}>
       <div className="form-container sign-up">
         <form action='/signup'>
-          <h1>Create Account</h1>
-          <div className="social-icons"></div>
-          <span>Use your email for registration</span>
+        <div className='headings d-flex'>
+          <h1 className='validText'>Create Account</h1>
+          <h1 className='hiddenText' onClick={toggleForm}>Login</h1>
+        </div>
+          <span className='regText'>Use your email for registration</span>
+          <div className='inputContainer'>
           <input type="text" placeholder="Name" required/>
           <input type="email" placeholder="Email" required/>
           <input type="password" placeholder="Password" required/>
+          </div>
           <button type="submit">Sign Up</button>
-            <p className='hiddenText'>You have already an account <span style={{color:'blue', cursor:'pointer'}} onClick={toggleForm}>Login</span></p>
+            <p className='hiddenText bottomText'>You have already an account <span style={{color:'blue', cursor:'pointer'}} onClick={toggleForm}>Login</span></p>
         </form>
       </div>
       <div className="form-container sign-in">
         <form action='/login'>
-          <h1>Sign In</h1>
-          <div className="social-icons"></div>
-          <span>Use your email and password</span>
+          <div className='headings d-flex'><h1 className='hiddenText' onClick={toggleForm}>Create Account</h1>
+          <h1 className='validText'>Login</h1></div>
+          {/* <div className="social-icons"></div> */}
+          <span className='regText'>Use your email and password</span>
+          <div className='inputContainer'>
           <input type="email" placeholder="Email" required/>
           <input type="password" placeholder="Password" required/>
-          <p>Forgot your Password ? <span className='text-decoration-underline' style={{color:'blue', cursor:'pointer'}}>Forgot</span></p>
-          <p style={{margin:'0 0 20px 0'}} className='hiddenText'>You don't have an account <span style={{color:'blue', cursor:'pointer'}} onClick={toggleForm}>Create account</span></p>
+          </div>
+          <p className='bottomText'>Forgot your Password ? <span className='text-decoration-underline' style={{color:'blue', cursor:'pointer'}}>Forgot</span></p>
+          {/* <p style={{margin:'0 0 20px 0'}} className='hiddenText bottomText hideContent'>You don't have an account <span style={{color:'blue', cursor:'pointer'}} onClick={toggleForm}>Create account</span></p> */}
           <button type="submit">Login</button>
         </form>
       </div>
