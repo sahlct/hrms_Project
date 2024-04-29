@@ -81,6 +81,7 @@ body{
     flex-direction: column;
     padding: 0 40px;
     height: 100%;
+    width: 100%;
 }
 
 .containerLogin input{
@@ -117,8 +118,20 @@ body{
     opacity: 0;
     z-index: 1;
 }
+.forget{
+    left: 0;
+    width: 50%;
+    opacity: 0;
+    z-index: 1;
+}
 
 .containerLogin.active .sign-up{
+    transform: translateX(100%);
+    opacity: 1;
+    z-index: 5;
+    animation: move 0,6s;
+}
+.containerLogin.active .forget{
     transform: translateX(100%);
     opacity: 1;
     z-index: 5;
@@ -136,11 +149,11 @@ body{
     }
 }
 
-.social-icons{
+/* .social-icons{
     margin: 20px 0;
-}
+} */
 
-.social-icons a{
+/* .social-icons a{
     border: 1px solid #ccc;
     border-radius: 20%;
     display: inline-flex;
@@ -149,7 +162,7 @@ body{
     margin: 0 3px;
     width: 40px;
     height: 40px;
-}
+} */
 
 .toggle-container{
     position: absolute;
@@ -229,6 +242,11 @@ body{
         transform: translateX(0);
         width: 100%;
     }
+    .containerLogin.active .forget {
+        transform: translateX(0);
+        width: 100%;
+        justify-content: center;
+    }
     .sign-in{
         width: 100%;
     }
@@ -249,6 +267,7 @@ body{
     }
     .containerLogin form{
         justify-content: flex-start;
+        width: 100%;
     }
     .headings h1{
         font-size: 15px !important;
@@ -271,6 +290,7 @@ body{
     }
     .inputContainer{
         margin-top: 20px;
+        width: 100%;
     }
     .regText{
         margin-top: 50px;
