@@ -2,9 +2,10 @@ import React from 'react'
 import './offCanvas.css'
 
 export default function OffCanvas() {
+  // setWidth(true)
   return (
     <div>
-        <div style={{marginTop:'69px'}} class="offcanvas offcanvas-start" data-bs-scroll="true" data-bs-backdrop="false" tabindex="-1" id="offcanvasScrolling" aria-labelledby="offcanvasScrollingLabel">
+        <div style={{marginTop:'68px'}} class="offcanvas offcanvas-start" data-bs-scroll="true" data-bs-backdrop="false" tabIndex="-1" id="offcanvasScrolling" aria-labelledby="offcanvasScrollingLabel">
   {/* <div class="offcanvas-header">
     <h5 class="offcanvas-title" id="offcanvasScrollingLabel"></h5>
     <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
@@ -18,16 +19,39 @@ export default function OffCanvas() {
         </div>
         <button style={{backgroundColor:'#f7f7f7'}} className='btn'>• • •</button>
     </div>
-   <div style={{borderRadius:'0'}} class="accordion accordion-flush" id="accordionExample">
+   <div  class="accordion accordion-flush" id="accordionExample">
   <div class="accordion-item">
     <h2 class="accordion-header">
-      <button className="accordion-button d-flex gap-5 ps-5" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne"><div ><i class="bi bi-person-vcard" style={{fontSize:'25px'}}></i></div>
-        <div>Employee </div>
+      <button className="accordion-button d-flex gap-5 ps-5" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo"><div ><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-layout-dashboard" width="30" height="30" viewBox="0 0 24 24" strokeWidth="1.5" stroke="#2c3e50" fill="none" strokeLinecap="round" strokeLinejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+  <path d="M4 4h6v8h-6z" />
+  <path d="M4 16h6v4h-6z" />
+  <path d="M14 12h6v8h-6z" />
+  <path d="M14 4h6v4h-6z" />
+</svg></div>
+        <div>Dashboard </div>
       </button>
     </h2>
-    <div id="collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+    <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
       <div className="accordion-body d-flex flex-column p-0">
-       <button>Management</button>
+      <button>Management</button>
+      <button>Upload</button>
+      <hr />
+      <button>File Types</button>
+      <button>Approval</button>
+      </div>
+    </div>
+  </div>
+  <div class="accordion-item">
+  <h2 class="accordion-header">
+    <button class="accordion-button collapsed d-flex gap-5 ps-5" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+      <div><i class="bi bi-person-vcard" style={{fontSize:'25px'}}></i></div>
+      <div>Employee</div>
+    </button>
+  </h2>
+  <div id="collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+    <div class="accordion-body">
+    <button>Management</button>
        <button>Request</button>
        <hr />
        <button>Placement</button>
@@ -37,32 +61,46 @@ export default function OffCanvas() {
        <hr />
        <button>Web Acoount</button>
        <button>HR Role</button>
-      </div>
     </div>
   </div>
-  <div class="accordion-item w-100 ">
+</div>
+  <div class="accordion-item">
     <h2 class="accordion-header">
-      <button class="accordion-button collapsed d-flex gap-5 ps-5" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+      <button class="accordion-button collapsed d-flex gap-5 ps-5" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
         <div><i style={{fontSize:'25px'}} class="bi bi-coin"></i></div>
         <div>Expence Claim</div>
       </button>
     </h2>
-    <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+    <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
       <div class="accordion-body">
-        <strong>This is the second item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+      <button>Management</button>
+       <button>Review</button>
+       <hr />
+       <button>Transaction Report</button>
+       <hr />
+       <button>Catogory</button>
+       <button>Type</button>
+       <button>Approval Workflow</button>
       </div>
     </div>
   </div>
   <div class="accordion-item">
     <h2 class="accordion-header">
-      <button class="accordion-button collapsed d-flex gap-5 ps-5" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+      <button class="accordion-button collapsed d-flex gap-5 ps-5" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
         <div><i style={{fontSize:'25px'}}class="bi bi-people"></i></div>
-        <div>Team</div>
+        <div>Attendence</div>
       </button>
     </h2>
-    <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+    <div id="collapseFour" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
       <div class="accordion-body">
-        <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+      <button>Management</button>
+       <button>Feild Check-in</button>
+       <hr />
+       <button>Time Clock Report</button>
+       <button>WorkDay</button>
+       <button>Holiday</button>
+       <hr />
+       <button>Setting</button>
       </div>
     </div>
   </div>
