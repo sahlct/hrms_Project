@@ -9,7 +9,7 @@ import Container from "./components/landingPage/container";
 
 function App() {
   return (
-    <div className="App">
+    <div className="App" style={{backgroundColor:'#f8fafb'}}>
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/login" element={<Login />} />

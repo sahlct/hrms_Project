@@ -2,7 +2,7 @@ import React from 'react'
 
 export default function SmallCard() {
   return (
-    <div className='d-flex justify-content-around flex-wrap row-gap-3' style={{marginTop:'100px'}}>
+    <div className='d-flex justify-content-around flex-wrap row-gap-3' style={{marginTop:'67px', paddingTop:'30px'}}>
         <div style={{width:'300px', border:'1px solid #eceef6',height:'150px', padding:'30px 40px', backgroundColor:'white'}} className="smCard_Container d-flex flex-column align-items-start rounded-2">
             <div className='d-flex gap-4'>
                 <h5 style={{fontSize:'15px', fontWeight:'700'}}>Total Employees</h5>
