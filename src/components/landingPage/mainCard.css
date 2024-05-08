@@ -1,0 +1,22 @@
+td,th,.empFooter{
+    padding: 10px 30px;
+}
+td,.empFooter{
+    /* font-size: 20px; */
+    font-weight: 600;
+}
+th{
+    color: #000000;
+    font-weight: 700;
+    font-size: 17px;
+}
+.counts{
+    width: 25px;
+    height: 25px;
+    background-color: rgb(233, 231, 231);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    border: 1px solid grey;
+}

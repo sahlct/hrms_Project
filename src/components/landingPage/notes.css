@@ -1,0 +1,28 @@
+.noteContainer{
+    max-width: 400px;
+    min-width: 250px;
+    /* width: 330px; */
+    border: 1px solid grey;
+    padding: 20px;
+    border-radius: 12px;
+}
+
+.note {
+    border: 1px solid #dee2e6;
+    border-radius: 0.25rem;
+    padding: 1rem;
+    margin-bottom: 1rem;
+  }
+  
+  .form-check-label {
+    font-weight: bold;
+  }
+  
+  .form-check-label small {
+    font-weight: normal;
+  }
+  
+  .badge {
+    font-size: 0.8rem;
+    padding: 0.35rem 0.65rem;
+  }

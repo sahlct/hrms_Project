@@ -3,6 +3,7 @@ import OffCanvas from "./offCanvas";
 import SmallCard from "./smallCard";
 import MainCard from "./mainCard";
 import { useState } from "react";
+import Notes from "./notes";
 
 export default function Container() {
   const [width, setWidth] = useState(false);
@@ -32,12 +33,15 @@ export default function Container() {
         style={{
           // width: width ? "calc(100vw - 267px)" : "calc(100vw - 50px)",
           transition: "0.6s ease-in-out",
-          backgroundColor:'white',
-          flexGrow:'1'
+          backgroundColor: "white",
+          flexGrow: "1",
         }}
       >
         <SmallCard />
-        <MainCard />
+        <div className="d-flex w-100 justify-content-between ">
+          <MainCard />
+          <Notes />
+        </div>
       </div>
     </div>
   );
