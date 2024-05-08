@@ -17,7 +17,7 @@ export default function Navbar({ width, setWidth, setCanvasWidth, setDisplay}) {
   return (
     <div
       style={{
-        backgroundColor: "rgb(239, 239, 239)",
+        backgroundColor: "#eab308",
         position: "fixed",
         top: "0",
         width: "100%",

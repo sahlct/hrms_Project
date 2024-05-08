@@ -3,31 +3,43 @@
       "id": "1",
       "header": "DashBoard",
       "icon": "lni lni-grid-alt",
-      "Childs": ["Login", "Signup", "ForgotPass"]
+      "Childs": ["Management", "Review", "Catogory"]
     },
     {
       "id": "2",
-      "header": "Profile",
-      "icon": "lni lni-agenda",
-      "Childs": ["View Profile", "Edit Profile"]
+      "header": "Team",
+      "icon": "lni lni-users",
+      "Childs": ["Descussion", "Announcement", "Documents"]
     },
     {
       "id": "3",
       "header": "Auth",
       "icon": "lni lni-protection",
-      "Childs": ["Inbox", "Sent", "Drafts"]
+      "Childs": ["Verification", "Validation"]
     },
     {
         "id": "4",
-        "header": "Multi Leval",
+        "header": "Employer",
         "icon": "lni lni-layout",
-        "Childs": ["Inbox", "Sent", "Drafts"]
+        "Childs": ["Information", "Job-Position", "Department"]
     },
     {
         "id": "5",
         "header": "Notification",
         "icon": "lni lni-popup",
         "Childs": ["Inbox", "Sent", "Drafts"]
-      }
+      },
+      {
+        "id": "6",
+        "header": "Calender",
+        "icon": "lni lni-calendar",
+        "Childs": ["Leave","WorkDay", "Holiday"]
+    },
+    {
+        "id": "7",
+        "header": "Payroll",
+        "icon": "lni lni-coin",
+        "Childs": ["Earnings","Salarys", "Deduction","Bonus"]
+    }
   ]
  
