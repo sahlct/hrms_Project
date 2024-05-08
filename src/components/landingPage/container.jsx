@@ -6,7 +6,7 @@ import { useState } from "react";
 
 export default function Container() {
   const [width, setWidth] = useState(false);
-  const [canvasWidth, setCanvasWidth] = useState('80px');
+  const [canvasWidth, setCanvasWidth] = useState('50px');
   const [display, setDisplay] = useState('0%')
   return (
     <div
@@ -14,7 +14,7 @@ export default function Container() {
       style={{ minHeight: "100vh" }}
     >
       <Navbar setWidth={setWidth} width={width} setCanvasWidth={setCanvasWidth} setDisplay={setDisplay}/>
-      <OffCanvas canvasWidth={canvasWidth} display={display}/>
+      <OffCanvas width={width} setWidth={setWidth} display={display}  setDisplay={setDisplay} canvasWidth={canvasWidth} setCanvasWidth={setCanvasWidth}/>
       <div
         className="semi_container"
         style={{

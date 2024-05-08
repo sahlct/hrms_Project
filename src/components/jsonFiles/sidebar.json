@@ -1,0 +1,33 @@
+[
+    {
+      "id": "1",
+      "header": "DashBoard",
+      "icon": "lni lni-grid-alt",
+      "Childs": ["Login", "Signup", "ForgotPass"]
+    },
+    {
+      "id": "2",
+      "header": "Profile",
+      "icon": "lni lni-agenda",
+      "Childs": ["View Profile", "Edit Profile"]
+    },
+    {
+      "id": "3",
+      "header": "Auth",
+      "icon": "lni lni-protection",
+      "Childs": ["Inbox", "Sent", "Drafts"]
+    },
+    {
+        "id": "4",
+        "header": "Multi Leval",
+        "icon": "lni lni-layout",
+        "Childs": ["Inbox", "Sent", "Drafts"]
+    },
+    {
+        "id": "5",
+        "header": "Notification",
+        "icon": "lni lni-popup",
+        "Childs": ["Inbox", "Sent", "Drafts"]
+      }
+  ]
+ 

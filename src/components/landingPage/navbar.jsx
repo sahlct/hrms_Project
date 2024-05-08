@@ -10,7 +10,7 @@ export default function Navbar({ width, setWidth, setCanvasWidth, setDisplay}) {
       setDisplay('100%')
     } else {
       setWidth(false);
-      setCanvasWidth("80px")
+      setCanvasWidth("50px")
       setDisplay('0%')
     }
   }
