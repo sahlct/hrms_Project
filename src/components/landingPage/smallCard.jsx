@@ -37,7 +37,7 @@ export default function SmallCard() {
     <div class="col rounded-3 p-0 overflow-hidden" style={{maxWidth:'280px', minWidth:'250px',border:'2px solid grey'}}>
       <div class="ps-4 pt-3 pe-4 bg-light" style={{height:'120px'}}>
       <div className='d-flex gap-4 justify-content-between '>
-                <h5 style={{fontSize:'15px', fontWeight:'700'}}>Resigns</h5>
+                <h5 style={{fontSize:'15px', fontWeight:'700'}}>Resign Employees</h5>
                 <div style={{backgroundColor:'#def6da', color:'#18910e', fontWeight:'700', fontSize:'14px'}} className='percentage ps-2 pe-2 rounded-4 d-flex align-items-center '>7.0 %</div>
             </div>
             <h2>17</h2>
