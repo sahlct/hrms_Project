@@ -4,6 +4,7 @@ import SmallCard from "./smallCard";
 import MainCard from "./mainCard";
 import { useState } from "react";
 import Notes from "./notes";
+import RunningProject from "./runProject";
 
 export default function Container() {
   const [width, setWidth] = useState(false);
@@ -42,6 +43,7 @@ export default function Container() {
           <MainCard />
           <Notes />
         </div>
+        <RunningProject />
       </div>
     </div>
   );

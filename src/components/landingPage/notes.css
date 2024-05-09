@@ -2,9 +2,10 @@
     max-width: 400px;
     min-width: 250px;
     /* width: 330px; */
-    border: 1px solid grey;
+    /* border: 1px solid grey; */
     padding: 20px;
     border-radius: 12px;
+    /* background-color: ; */
 }
 
 .note {
@@ -12,6 +13,7 @@
     border-radius: 0.25rem;
     padding: 1rem;
     margin-bottom: 1rem;
+    background-color: rgb(218, 252, 190);
   }
   
   .form-check-label {
