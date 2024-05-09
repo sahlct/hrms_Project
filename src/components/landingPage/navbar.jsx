@@ -1,17 +1,19 @@
 import React from "react";
 // import OffCanvas from './offCanvas'
 
-export default function Navbar({ width, setWidth, setCanvasWidth, setDisplay}) {
+export default function Navbar({ width, setWidth, setCanvasWidth, setOpacity, setHide}) {
   // setWidth(true)
   function settingWidth() {
     if (width === false) {
       setWidth(true);
       setCanvasWidth("250px")
-      setDisplay('100%')
+      setOpacity('100%')
+      setHide('block')
     } else {
       setWidth(false);
       setCanvasWidth("60px")
-      setDisplay('0%')
+      setOpacity('0%')
+      setHide('none')
     }
   }
   return (

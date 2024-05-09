@@ -5,10 +5,12 @@ import sideJson from "../jsonFiles/sidebar.json";
 export default function OffCanvas({
   width,
   setWidth,
-  display,
-  setDisplay,
+  opaacity,
+  setOpacity,
   canvasWidth,
   setCanvasWidth,
+  hide,
+  setHide
 }) {
   const [product, setData] = useState([]);
   const [loading, setLoading] = useState(true);
@@ -18,11 +20,13 @@ export default function OffCanvas({
     if (width === false) {
       setWidth(true);
       setCanvasWidth("250px");
-      setDisplay("100%");
+      setOpacity("100%");
+      setHide('flex')
     } else {
       setWidth(false);
       setCanvasWidth("50px");
-      setDisplay("0%");
+      setOpacity("0%");
+      setHide('none')
     }
   }
 
@@ -64,10 +68,11 @@ export default function OffCanvas({
                   className={`icons ${item.icon} d-flex justify-content-center`}
                   onClick={() => settingWidth()}
                 ></i>
-                <p className="icon-text mb-0" style={{ opacity: display }}>
+                <p className="icon-text mb-0" style={{display:hide, opacity:opaacity, transition: '0.6s ease-in-out'}}>
                   {item.header}
                 </p>
                 <button
+                  style={{display:hide}}
                   className="accordion-button collapsed d-flex justify-content-center"
                   type="button"
                   data-bs-toggle="collapse"
@@ -75,23 +80,20 @@ export default function OffCanvas({
                   aria-expanded="false"
                   aria-controls={`flush-collapse${item.id}`}
                 >
-                  <i className="lni lni-chevron-down"></i>
+                  <i className="lni lni-chevron-down" style={{display:hide}}></i>
                 </button>
                 {/* dropDown  */}
                 <div className="dropdown dropend">
-                <ul className="dropdown-menu" id={`dropdownMenu_${item.id}`}>
+                <ul className="dropdown-menu p-0" id={`dropdownMenu_${item.id}`}>
                   {/* Dropdown menu links */}
                   {item.Childs.map((child, index) => (
-                    <li key={index}>
+                    <li key={index} style={{height:'35px'}}>
                       <p className="dropdown-item">{child}</p>
                     </li>
                   ))}
                 </ul>
               </div>
               </div>
-             
-             
-
               <div
                 id={`flush-collapse${item.id}`}
                 className="accordion-collapse collapse"

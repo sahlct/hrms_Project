@@ -9,7 +9,8 @@ import RunningProject from "./runProject";
 export default function Container() {
   const [width, setWidth] = useState(false);
   const [canvasWidth, setCanvasWidth] = useState("60px");
-  const [display, setDisplay] = useState("0%");
+  const [opaacity, setOpacity] = useState("0%");
+  const [hide, setHide] = useState('none')
   return (
     <div
       className="home_mainContainer  d-flex justify-content-end"
@@ -25,15 +26,18 @@ export default function Container() {
         setWidth={setWidth}
         width={width}
         setCanvasWidth={setCanvasWidth}
-        setDisplay={setDisplay}
+        setOpacity={setOpacity}
+        setHide={setHide}
       />
       <OffCanvas
         width={width}
         setWidth={setWidth}
-        display={display}
-        setDisplay={setDisplay}
+        opaacity={opaacity}
+        setOpacity={setOpacity}
         canvasWidth={canvasWidth}
         setCanvasWidth={setCanvasWidth}
+        hide={hide}
+        setHide={setHide}
       />
       <div
         className="semi_container"
