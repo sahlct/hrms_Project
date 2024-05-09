@@ -10,14 +10,14 @@ export default function Navbar({ width, setWidth, setCanvasWidth, setDisplay}) {
       setDisplay('100%')
     } else {
       setWidth(false);
-      setCanvasWidth("50px")
+      setCanvasWidth("60px")
       setDisplay('0%')
     }
   }
   return (
     <div
       style={{
-        backgroundColor: "#eab308",
+        backgroundColor: "#725cff",
         position: "fixed",
         top: "0",
         width: "100%",
@@ -44,14 +44,15 @@ export default function Navbar({ width, setWidth, setCanvasWidth, setDisplay}) {
           </div>
           <div className="centerSide w-50">
           <form className="d-flex w-100 " role="search">
-            <div className="searchBox d-flex align-items-center w-75 ">
+            <div className="searchBox d-flex align-items-center w-75 position-relative ">
               {/* <div style={{color:'black'}}><i class="bi bi-search"></i></div> */}
               <input
                 class="form-control  border-0 "
                 type="search"
-                placeholder="🔍   Search..."
+                placeholder="Search..."
                 aria-label="Search"
               />
+              <span style={{position:'absolute', right:'15px'}}><i class="bi bi-search"></i></span>
               {/* <button class="btn btn-outline-success" type="submit">Search</button> */}
             </div>
           </form>

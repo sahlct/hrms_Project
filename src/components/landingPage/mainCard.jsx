@@ -4,19 +4,16 @@ import "./mainCard.css";
 export default function MainCard() {
   return (
     <div>
-      <div
-        className="empContainer mt-5 ms-5 rounded-3 bg-light "
-        style={{ width: "100%"}}
-      >
+      <div className="empContainer mt-5 ms-5 rounded-3">
         <div className="empHeader d-flex justify-content-between p-3 align-items-center ">
-          <h6 style={{fontWeight:'700', paddingLeft:'20px'}}>Employees</h6>
+          <h6 style={{fontWeight:'600', paddingLeft:'20px'}}>Employees</h6>
           <div class="dropdown">
             <button
-              class="btn dropdown-toggle d-flex justify-content-between align-items-center gap-2 "
+              class="btn dropdown-toggle d-flex justify-content-between align-items-center gap-2 bg-primary"
               type="button"
               data-bs-toggle="dropdown"
               aria-expanded="false"
-              style={{backgroundColor:'#eab308', color:'white'}}
+              style={{color:'white'}}
             >
               <i class="lni lni-list"></i>filter
             </button>
@@ -33,16 +30,8 @@ export default function MainCard() {
             </ul>
           </div>
         </div>
-           {/* <div style={{width:'100%'}}>
-           <div style={{ height: "50px", borderRadius:'15px', overflow:'hidden'}} className="d-flex bg-danger ms-5 me-5 ">
-            <div className=" w-25 d-flex justify-content-start " style={{padding: '10px 30px'}}>Employee Name</div>
-            <div className=" w-25 d-flex justify-content-start " style={{padding: '10px 30px'}}>Job Title</div>
-            <div className=" w-25 d-flex justify-content-start " style={{padding: '10px 30px'}}>Team Lead</div>
-            <div className=" w-25 d-flex justify-content-start " style={{padding: '10px 30px'}}>Status</div>
-            </div>
-            </div> */}
         <table className="w-100">  
-          <thead style={{backgroundColor:'#416865'}}>
+          <thead style={{backgroundColor:'#00b4d8'}}>
             <tr style={{ height: "50px", borderRadius:'10px', overflow:'hidden'}}>
               <th>Employee Name</th>
               <th>Job Title</th>
@@ -52,21 +41,21 @@ export default function MainCard() {
           </thead>        
           <tbody>
             <tr style={{ height: "50px" }}>
-              <td>Afsal</td>
-              <td>Cyber Security</td>
+            <td className="d-flex gap-3 "><img style={{width:'25px', height:'25px'}} src="/assets/man.png" alt="user img" />Afsal</td>
+              <td>Python Dev</td>
               <td>Anand Saayi</td>
-              <td style={{color:'tomato'}}>Sick Leav</td>
-            </tr>
-            <tr style={{ height: "50px" }}>
-              <td>Meghah</td>
-              <td>ui/ux Designer</td>
-              <td>John Samual</td>
               <td style={{color:'green'}}>Active</td>
             </tr>
             <tr style={{ height: "50px" }}>
-              <td>Salman</td>
-              <td>React Dev</td>
+            <td className="d-flex gap-3 "><img style={{width:'25px', height:'25px'}} src="/assets/woman.png" alt="user img" />Meghah</td>
+              <td>ui/ux Designer</td>
               <td>John Samual</td>
+              <td style={{color:'tomato'}}>Sick Leav</td>
+            </tr>
+            <tr style={{ height: "50px" }}>
+              <td className="d-flex gap-3 "><img style={{width:'25px', height:'25px'}} src="/assets/user.png" alt="user img" />Salman</td>
+              <td>React Dev</td>
+              <td>Mubashir Ali</td>
               <td style={{color:'green'}}>Active</td>
             </tr>
           </tbody>
@@ -81,7 +70,7 @@ export default function MainCard() {
             <div className="counts">3</div>
             <div className="counts"><i class="lni lni-line-dotted"></i></div>
             <div className="counts">15</div>
-            <button className="btn d-flex align-items-center" style={{height:'25px', backgroundColor:'rgb(233, 231, 231)', border:'1px solid black'}}>Next</button>
+            <button className="btn d-flex align-items-center" style={{height:'25px', backgroundColor:'white', border:'1px solid black'}}>Next</button>
           </div>
         </div>
       </div>
