@@ -4,15 +4,15 @@ import "./notes.css";
 export default function Notes() {
   return (
     <div>
-      <div className="noteContainer">
+      <div className="noteContainer d-flex flex-column gap-4">
         {/* <div class="container"> */}
         <div className="d-flex justify-content-between align-items-center ps-3 pe-3">
-          <h5 style={{fontWeight:'700'}}>Notes</h5>
-          <button type="button" class="btn btn-primary mb-3 d-flex align-items-center" style={{height:'30px'}}>
+          <h5 style={{fontWeight:'700'}} className="mb-0 text-white">Notes</h5>
+          <button type="button" class="btn btn-light d-flex align-items-center" style={{height:'30px'}}>
           <i class="bi bi-plus"></i> Add
           </button>
-          </div>
-          <div class="note">
+        </div>
+        <div class="note">
             <div class="form-check">
               <input
                 class="form-check-input"
@@ -25,16 +25,16 @@ export default function Notes() {
                 Meeting with V-Star
               </label><br />
               <small class="text-muted">
-                  Discuss the Website Redesign...
+                  Discuss the Redesign...
             </small>
             </div>
             <div class="d-flex justify-content-start">
               <span class="badge bg-danger me-2">Today</span>
               <span class="badge bg-warning">Meeting</span>
-              <small class="text-muted ms-auto">May 10</small>
+              <small class="text-muted ms-auto">May 13</small>
             </div>
-          </div>
-          <div class="note">
+        </div>
+        <div class="note">
             <div class="form-check">
               <input
                 class="form-check-input"
@@ -47,15 +47,15 @@ export default function Notes() {
                 Meeting with Nike
               </label><br />
               <small class="text-muted">
-                  Discuss the Website Redesign...
+                  Discuss the Products...
             </small>
             </div>
             <div class="d-flex justify-content-start">
               <span class="badge bg-danger me-2">Tomorrow</span>
               <span class="badge bg-warning">Meeting</span>
-              <small class="text-muted ms-auto">May 11</small>
+              <small class="text-muted ms-auto">May 14</small>
             </div>
-          </div>
+        </div>
         {/* </div> */}
       </div>
     </div>
