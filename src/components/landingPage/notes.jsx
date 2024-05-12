@@ -3,7 +3,7 @@ import "./notes.css";
 
 export default function Notes() {
   return (
-    <div style={{ width: "30%", marginRight:'50px', marginTop:'45px'}}>
+    <div style={{marginTop:'50px'}}>
       <div className="noteContainer">
         {/* <div class="container"> */}
         <div className="d-flex justify-content-between align-items-center ps-3 pe-3">

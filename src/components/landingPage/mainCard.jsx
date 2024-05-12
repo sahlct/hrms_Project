@@ -4,7 +4,7 @@ import "./mainCard.css";
 export default function MainCard() {
   return (
     <div>
-      <div className="empContainer mt-5 ms-5 rounded-3">
+      <div className="empContainer ms-5 rounded-4">
         <div className="empHeader d-flex justify-content-between p-3 align-items-center ">
           <h6 style={{fontWeight:'600', paddingLeft:'20px'}}>Employees</h6>
           <div class="dropdown">

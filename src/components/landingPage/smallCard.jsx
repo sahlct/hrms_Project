@@ -1,50 +1,71 @@
-import React from 'react'
+import React from "react";
+import Notes from "./notes";
+import Tasks from "./tasks";
+// import MainCard from "./mainCard";
 
 export default function SmallCard() {
   return (
-    <div class="container" style={{marginTop:'67px', paddingTop:'30px'}}>
-  <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 g-5 gap-4 justify-content-center" >
-  <div class="col rounded-3 p-0 overflow-hidden" style={{maxWidth:'280px', minWidth:'250px',border:'2px solid grey'}}>
-      <div class="ps-4 pt-3 pe-4 bg-light" style={{height:'120px'}}>
-      <div className='d-flex gap-4 justify-content-between '>
-                <h5 style={{fontSize:'15px', fontWeight:'700'}}>Job view</h5>
-                <div style={{backgroundColor:'#def6da', color:'#18910e', fontWeight:'700', fontSize:'14px'}} className='percentage ps-2 pe-2 rounded-4 d-flex align-items-center '>22.0 %</div>
-            </div>
-            <h2>3342</h2>
-            <p style={{fontSize:'15px'}}>viewers</p>
+    <div class="container d-flex gap-5 ps-0 pe-0" style={{ marginTop: "20px", paddingTop: "30px" }}>
+      <div className="leftBAr d-flex flex-column ps-4 w-75 row-gap-4">
+      <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 g-5 gap-4 me-0 mt-0 mb-0" style={{paddingLeft:'24px'}}>
+        <div
+          class="col rounded-4 p-0 overflow-hidden d-flex align-items-center gap-4 "
+          style={{
+            maxWidth: "260px",
+            minWidth: "260px",
+            border: "2px solid grey",
+            height:'100px'
+          }}
+        >
+          <div className="h-100  d-flex justify-content-end align-items-center " style={{width:'30%'}}>
+            <div className="mainIcon d-flex justify-content-center align-items-center" style={{height:'50px',width:'50px',borderRadius:'50%', backgroundColor:'#eaedff'}}><i class="bi bi-people" style={{fontSize:'25px', color:'blue'}}></i></div>   
+          </div>
+          <div className="d-flex justify-content-center align-items-start flex-column h-100 gap-1"  style={{width:'70%'}}>
+            <div className="headerText" style={{ fontSize: "15px", fontWeight: "700" }} >Total Employees</div>
+            <div className="countText" style={{fontSize:'30px', fontWeight: "700"}}>735</div>
+          </div>
+        </div>
+        <div
+          class="col rounded-4 p-0 overflow-hidden d-flex align-items-center gap-4 "
+          style={{
+            maxWidth: "260px",
+            minWidth: "260px",
+            border: "2px solid grey",
+            height:'100px'
+          }}
+        >
+          <div className="h-100  d-flex justify-content-end align-items-center " style={{width:'30%'}}>
+            <div className="mainIcon d-flex justify-content-center align-items-center" style={{height:'50px',width:'50px',borderRadius:'50%', backgroundColor:'#e3fdd9' }}><i class="bi bi-person-check" style={{fontSize:'25px', color:'green'}}></i></div>   
+          </div>
+          <div className="d-flex justify-content-center align-items-start flex-column h-100 gap-1"  style={{width:'70%'}}>
+            <div className="headerText" style={{ fontSize: "15px", fontWeight: "700" }} >Today's Attendence</div>
+            <div className="countText" style={{fontSize:'30px', fontWeight: "700"}}>97 %</div>
+          </div>
+        </div>
+        <div
+          class="col rounded-4 p-0 overflow-hidden d-flex align-items-center gap-4 "
+          style={{
+            maxWidth: "260px",
+            minWidth: "260px",
+            border: "2px solid grey",
+            height:'100px'
+          }}
+        >
+          <div className="h-100  d-flex justify-content-end align-items-center " style={{width:'30%'}}>
+            <div className="mainIcon d-flex justify-content-center align-items-center" style={{height:'50px',width:'50px',borderRadius:'50%', backgroundColor:'#fde9cf'}}><i class="bi bi-person-x" style={{fontSize:'25px', color:'orange'}}></i></div>   
+          </div>
+          <div className="d-flex justify-content-center align-items-start flex-column h-100 gap-1"  style={{width:'70%'}}>
+            <div className="headerText" style={{ fontSize: "15px", fontWeight: "700" }} >Leave Employees</div>
+            <div className="countText" style={{fontSize:'30px', fontWeight: "700"}}>12</div>
+          </div>
+        </div>
       </div>
-    </div>
-    <div class="col rounded-3 p-0 overflow-hidden" style={{maxWidth:'280px', minWidth:'250px',border:'2px solid grey'}}>
-      <div class="ps-4 pt-3 pe-4 bg-light" style={{height:'120px'}}>
-      <div className='d-flex gap-4 justify-content-between '>
-                <h5 style={{fontSize:'15px', fontWeight:'700'}}>Job Applied</h5>
-                <div style={{backgroundColor:'#def6da', color:'#18910e', fontWeight:'700', fontSize:'14px'}} className='percentage ps-2 pe-2 rounded-4 d-flex align-items-center '>12.0 %</div>
-            </div>
-            <h2>77</h2>
-            <p style={{fontSize:'15px'}}>Applicants</p>
+        <Tasks />
       </div>
-    </div>
-    <div class="col rounded-3 p-0 overflow-hidden" style={{maxWidth:'280px', minWidth:'250px',border:'2px solid grey'}}>
-      <div class="ps-4 pt-3 pe-4 bg-light" style={{height:'120px'}}>
-      <div className='d-flex gap-4 justify-content-between '>
-                <h5 style={{fontSize:'15px', fontWeight:'700'}}>Hiring</h5>
-                <div style={{backgroundColor:'#def6da', color:'#18910e', fontWeight:'700', fontSize:'14px'}} className='percentage ps-2 pe-2 rounded-4 d-flex align-items-center '>48.0 %</div>
-            </div>
-            <h2>442</h2>
-            <p style={{fontSize:'15px'}}>viewers</p>
+      <div className="rightBar w-25 ">
+      <Notes />
       </div>
+      {/* <MainCard /> */}
     </div>
-    <div class="col rounded-3 p-0 overflow-hidden" style={{maxWidth:'280px', minWidth:'250px',border:'2px solid grey'}}>
-      <div class="ps-4 pt-3 pe-4 bg-light" style={{height:'120px'}}>
-      <div className='d-flex gap-4 justify-content-between '>
-                <h5 style={{fontSize:'15px', fontWeight:'700'}}>Resign Employees</h5>
-                <div style={{backgroundColor:'#def6da', color:'#18910e', fontWeight:'700', fontSize:'14px'}} className='percentage ps-2 pe-2 rounded-4 d-flex align-items-center '>7.0 %</div>
-            </div>
-            <h2>17</h2>
-            <p style={{fontSize:'15px'}}>Employee</p>
-      </div>
-    </div>
-  </div>
-     </div>
-  )
+  );
 }
