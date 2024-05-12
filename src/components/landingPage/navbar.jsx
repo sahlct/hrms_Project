@@ -23,7 +23,8 @@ export default function Navbar({ width, setWidth, setCanvasWidth, setOpacity, se
         position: "fixed",
         top: "0",
         width: "100%",
-        zIndex:'2'
+        zIndex:'2',
+        boxShadow:'5px 12px 13px -10px rgba(0, 0, 0, 0.5)'
       }}
     >
       <nav class="navbar">
