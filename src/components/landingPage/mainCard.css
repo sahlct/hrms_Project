@@ -2,46 +2,49 @@
 .empContainer{
     width: 100%;
     background-color: #f3eaa0;
-    padding: 20px;
+    padding: 10px 20px 0 20px;
 }
-td,th,.empFooter{
+.empContainer td,th{
     padding: 10px 30px;
 }
-td,.empFooter{
+.empFooter{
+    padding: 5px 30px;
+}
+.empContainer td,.empFooter{
     font-weight: 600;
 }
-th{
+.empContainer th{
     color: #ffffff;
     font-weight: 700;
     font-size: 17px;
 }
 
-table {
+.empContainer table {
     border-collapse: collapse;
     width: 100%;
 }
 
-th, td {
-    padding: 10px;
+.empContainer th, td {
+    /* padding: 10px; */
     text-align: left;
     border-bottom: 1px solid #ddd;
 }
 
-th {
+.empContainer th {
     background-color: #007bff; /* Blue color */
     color: #fff; /* White text */
 }
-th:first-child {
+.empContainer th:first-child {
     border-radius: 10px 0 0 10px; /* Rounded top-left corner */
 }
 
-th:last-child {
+.empContainer th:last-child {
     border-radius: 0 10px 10px 0; /* Rounded top-right corner */
 }
-td {
+.empContainer td {
     border: none; /* Remove borders for data cells */
 }
-.counts{
+.empContainer .counts{
     width: 25px;
     height: 25px;
     background-color: white;

@@ -1,10 +1,11 @@
 import Navbar from "./navbar";
 import OffCanvas from "./offCanvas";
-import SmallCard from "./smallCard";
-import MainCard from "./mainCard";
+// import MainCard from "./mainCard";
 import { useState } from "react";
 // import Notes from "./notes";
 import RunningProject from "./runProject";
+import LeftContainer from "./leftContainer";
+import RightContainer from "./rightContainer";
 
 export default function Container() {
   const [width, setWidth] = useState(false);
@@ -36,17 +37,18 @@ export default function Container() {
         setHide={setHide}
       />
       <div
-        className="semi_container"
+        className="semi_container d-flex "
         style={{
           transition: "0.6s ease-in-out",
           flexGrow: "1",
         }}
       >
-        <SmallCard />
+        <LeftContainer />
+        <RightContainer />
         {/* <Notes /> */}
-        <div className="d-flex w-100 justify-content-start ">
-          <MainCard />
-        </div>
+        {/* <div className="d-flex w-100 justify-content-start "> */}
+          {/* <MainCard /> */}
+        {/* </div> */}
         <RunningProject />
       </div>
     </div>

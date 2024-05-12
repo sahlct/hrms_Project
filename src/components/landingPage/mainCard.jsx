@@ -1,10 +1,10 @@
 import React from "react";
 import "./mainCard.css";
 
-export default function MainCard() {
+export default function EmployeeList() {
   return (
-    <div>
-      <div className="empContainer ms-5 rounded-4">
+    <div className="pe-4">
+      <div className="empContainer rounded-4">
         <div className="empHeader d-flex justify-content-between p-3 align-items-center ">
           <h6 style={{fontWeight:'600', paddingLeft:'20px'}}>Employees</h6>
           <div class="dropdown">
@@ -41,7 +41,7 @@ export default function MainCard() {
           </thead>        
           <tbody>
             <tr style={{ height: "50px" }}>
-            <td className="d-flex gap-3 "><img style={{width:'25px', height:'25px'}} src="/assets/man.png" alt="user img" />Afsal</td>
+            <td className="d-flex gap-3"><img style={{width:'25px', height:'25px'}} src="/assets/man.png" alt="user img" /> <div>Afsal</div></td>
               <td>Python Dev</td>
               <td>Anand Saayi</td>
               <td style={{color:'green'}}>Active</td>
