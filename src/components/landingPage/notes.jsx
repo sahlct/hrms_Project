@@ -3,7 +3,7 @@ import "./notes.css";
 
 export default function Notes() {
   return (
-    <div>
+    <div className="noteParent">
       <div className="noteContainer d-flex flex-column gap-4">
         {/* <div class="container"> */}
         <div className="d-flex justify-content-between align-items-center ps-3 pe-3">

@@ -1,34 +1,53 @@
 import Navbar from "./navbar";
 import OffCanvas from "./offCanvas";
-// import MainCard from "./mainCard";
-import { useState } from "react";
-// import Notes from "./notes";
-import RunningProject from "./runProject";
+import { useEffect, useState } from "react";
 import LeftContainer from "./leftContainer";
 import RightContainer from "./rightContainer";
+import "./container.css";
 
 export default function Container() {
-  const [width, setWidth] = useState(false);
+  const [mainwidth, setMainWidth] = useState(false);
   const [canvasWidth, setCanvasWidth] = useState("60px");
   const [opaacity, setOpacity] = useState("0%");
-  const [hide, setHide] = useState('none')
+  const [hide, setHide] = useState("none");
+  const [windowWidth, setWindowWidth] = useState(window.innerWidth);
+  const [isBelow1000px, setIsBelow1000px] = useState(window.innerWidth < 1000);
+
+  useEffect(() => {
+    const handleResize = () => {
+      const width = window.innerWidth;
+      setWindowWidth(width);
+      setIsBelow1000px(width < 1001);
+    };
+
+    window.addEventListener('resize', handleResize);
+
+    // Cleanup function to remove event listener when component unmounts
+    return () => {
+      window.removeEventListener('resize', handleResize);
+    };
+  }, []);
+      console.log('windoWidth',windowWidth);
+  // Define the inline style based on conditions
+  const semiContainerStyle = {
+    width: isBelow1000px ? '100vw' : (mainwidth ? 'calc(100vw - 250px)' : 'calc(100vw - 50px)')
+  };
+
   return (
     <div
       className="home_mainContainer  d-flex justify-content-end"
-      style={{ minHeight: "100vh",
-      backgroundColor:'white'
-      }}
+      style={{ minHeight: "100vh", backgroundColor: "white" }}
     >
       <Navbar
-        setWidth={setWidth}
-        width={width}
+        setMainWidth={setMainWidth}
+        mainwidth={mainwidth}
         setCanvasWidth={setCanvasWidth}
         setOpacity={setOpacity}
         setHide={setHide}
       />
       <OffCanvas
-        width={width}
-        setWidth={setWidth}
+        mainwidth={mainwidth}
+        setMainWidth={setMainWidth}
         opaacity={opaacity}
         setOpacity={setOpacity}
         canvasWidth={canvasWidth}
@@ -36,20 +55,10 @@ export default function Container() {
         hide={hide}
         setHide={setHide}
       />
-      <div
-        className="semi_container d-flex "
-        style={{
-          transition: "0.6s ease-in-out",
-          flexGrow: "1",
-        }}
-      >
+      {/* Pass the style object to the div */}
+      <div className="semi_container d-flex" style={semiContainerStyle}>
         <LeftContainer />
         <RightContainer />
-        {/* <Notes /> */}
-        {/* <div className="d-flex w-100 justify-content-start "> */}
-          {/* <MainCard /> */}
-        {/* </div> */}
-        <RunningProject />
       </div>
     </div>
   );

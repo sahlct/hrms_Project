@@ -3,8 +3,8 @@ import "./offCanvas.css";
 import sideJson from "../jsonFiles/sidebar.json";
 
 export default function OffCanvas({
-  width,
-  setWidth,
+  mainwidth,
+  setMainWidth,
   opaacity,
   setOpacity,
   canvasWidth,
@@ -14,16 +14,16 @@ export default function OffCanvas({
 }) {
   const [product, setData] = useState([]);
   const [loading, setLoading] = useState(true);
-  console.log(loading);
+  console.log("loading",loading);
 
   function settingWidth() {
-    if (width === false) {
-      setWidth(true);
+    if (mainwidth === false) {
+      setMainWidth(true);
       setCanvasWidth("250px");
       setOpacity("100%");
       setHide('flex')
     } else {
-      setWidth(false);
+      setMainWidth(false);
       setCanvasWidth("50px");
       setOpacity("0%");
       setHide('none')
@@ -53,7 +53,7 @@ export default function OffCanvas({
   };
   return (
     <div>
-      <div style={{ width: canvasWidth }} className="sideBar">
+      <div style={{ width: canvasWidth, left:'0' }} className="sideBar position-fixed ">
         <div
           className="accordion accordion-flush"
           style={{ width: canvasWidth }}

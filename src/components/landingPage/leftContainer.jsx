@@ -6,18 +6,18 @@ import EmployeeList from "./mainCard";
 
 export default function LeftContainer() {
   return (
-    <div class="container d-flex gap-5 ps-0 pe-0 w-75" style={{marginTop:'68px', paddingTop:'20px'}}>
+    <div class="leftcontainer d-flex gap-5 ps-0 pe-0" style={{marginTop:'68px', paddingTop:'20px'}}>
       <div className="fullContainer d-flex flex-column ps-4 w-100 row-gap-4">
-      <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 g-5 gap-4 me-0 mb-0" style={{paddingLeft:'24px'}}>
+      <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 g-5 gap-4 me-0 mb-0 flex-nowrap overflow-auto me-4" style={{paddingLeft:'24px'}}>
         <div
           class="col rounded-4 p-0 overflow-hidden d-flex align-items-center gap-4 "
           style={{
             // maxWidth: "260px",
-            // minWidth: "260px",
+            minWidth: "260px",
             width:'31%',
             border: "2px solid grey",
             height:'80px',
-            boxShadow:'rgba(100, 100, 111, 0.2) 0px 7px 5px 0px'
+            // boxShadow:'rgba(100, 100, 111, 0.2) 0px 7px 5px 0px'
           }}
         >
           <div className="h-100  d-flex justify-content-end align-items-center " style={{width:'30%'}}>
@@ -32,11 +32,11 @@ export default function LeftContainer() {
           class="col rounded-4 p-0 overflow-hidden d-flex align-items-center gap-4 "
           style={{
             // maxWidth: "260px",
-            // minWidth: "260px",
+            minWidth: "260px",
             width:'31%',
             border: "2px solid grey",
             height:'80px',
-            boxShadow:'rgba(100, 100, 111, 0.2) 0px 7px 5px 0px'
+            // boxShadow:'rgba(100, 100, 111, 0.2) 0px 7px 5px 0px'
           }}
         >
           <div className="h-100  d-flex justify-content-end align-items-center " style={{width:'30%'}}>
@@ -51,11 +51,11 @@ export default function LeftContainer() {
           class="col rounded-4 p-0 overflow-hidden d-flex align-items-center gap-4 "
           style={{
             // maxWidth: "260px",
-            // minWidth: "260px",
+            minWidth: "260px",
             width:'31%',
             border: "2px solid grey",
             height:'80px',
-            boxShadow:'rgba(100, 100, 111, 0.2) 0px 7px 5px 0px'
+            // boxShadow:'rgba(100, 100, 111, 0.2) 0px 7px 5px 0px'
           }}
         >
           <div className="h-100  d-flex justify-content-end align-items-center " style={{width:'30%'}}>

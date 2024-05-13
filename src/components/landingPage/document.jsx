@@ -3,7 +3,7 @@ import React from 'react'
 export default function Document() {
     let count = 4
   return (
-    <div className='documentContainer w-100 rounded-3 p-3' style={{backgroundColor:'#f1f1ff'}}>
+    <div className='documentContainer rounded-3 p-3' style={{backgroundColor:'#f1f1ff'}}>
         <div>
             <h5 className=' mb-3 ms-3 '>Documents</h5>
             <p className='text-black d-flex gap-2 align-items-center pointer' style={{fontWeight:'500'}}>

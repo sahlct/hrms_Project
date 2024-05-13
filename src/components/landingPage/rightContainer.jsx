@@ -4,10 +4,9 @@ import Document from "./document";
 
 export default function RightContainer() {
   return (
-    <div className="rightContainer w-25 d-flex flex-column gap-4" style={{marginTop: '68px', paddingTop: '20px'}}>
+    <div className="rightContainer d-flex gap-4" style={{ paddingTop: '20px'}}>
         <Document />
-      <Notes />
-      {/* <Notes /> */}
+        <Notes />
     </div>
   );
 }
