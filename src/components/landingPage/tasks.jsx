@@ -4,7 +4,7 @@ import './tasks.css'
 export default function Tasks() {
   return (
     <div className='taskConatiner d-flex gap-4 ' style={{paddingRight:'20px'}}>
-        <div className="MainTasks rounded-3 overflow-hidden p-2 " style={{border:'2px solid grey',color:'black'}}>
+        <div className="MainTasks rounded-3 overflow-hidden p-2 " style={{boxShadow:'rgba(100, 100, 111, 0.2) 0px 7px 29px 0px'}}>
             {/* <div className="Taskhead d-flex justify-content-around bg-danger text-white">
                 <div className='w-25 p-2'>Date</div>
                 <button className='btn'><i class="bi bi-plus-circle"></i>Add New</button>
@@ -35,7 +35,7 @@ export default function Tasks() {
                 <button className='btn btn-secondary' style={{fontWeight:'500'}}> Add New <i class="bi bi-plus-circle"></i></button>
             </div>
         </div>
-        <div className="MainGraphs rounded-3 overflow-hidden p-2 " style={{border:'2px solid grey'}}>
+        <div className="MainGraphs rounded-3 overflow-hidden p-2 " style={{boxShadow:'rgba(100, 100, 111, 0.2) 0px 7px 29px 0px'}}>
         <div className="Taskbody">
                 <table className='w-100'>
                     <thead>

@@ -35,7 +35,7 @@ export default function Navbar({
     >
       <nav class="navbar">
         <div class="Maincontainer-fluid w-100 d-flex align-items-center flex-nowrap justify-content-between">
-          <div className="rightSide d-flex align-items-center ps-lg-4 ps-sm-1 justify-content-center ">
+          <div className="leftSide d-flex align-items-center ps-lg-4 ps-sm-1 justify-content-center ">
             <button class="btn" type="button" onClick={() => settingWidth()}>
               <i
                 style={{ fontSize: "25px", color: "black" }}
@@ -74,10 +74,10 @@ export default function Navbar({
                 borderRadius: "8px",
                 position: "relative",
               }}
-              className="notificationBtn btn border-0 me-lg-4 me-sm-1 "
+              className="notificationBtn btn border-0 me-lg-4 me-sm-3"
             >
               <i class="bi bi-bell"></i>
-              <div
+              <div className="dot"
                 style={{
                   position: "fixed",
                   width: "5px",
@@ -85,11 +85,11 @@ export default function Navbar({
                   backgroundColor: "red",
                   borderRadius: "50%",
                   top: "25px",
-                  right: "118px",
+                  // right: "118px",
                 }}
               ></div>
             </button>
-            <div
+            <div className="profileImage"
               style={{
                 backgroundImage:
                   "url(https://images.unsplash.com/photo-1544005313-94ddf0286df2?q=80&w=1000&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D)",
@@ -98,7 +98,7 @@ export default function Navbar({
                 width: "40px",
                 height: "40px",
                 borderRadius: "50%",
-                marginRight:'40px',
+                // marginRight:'40px',
                 border:'2px solid white'
               }}
             ></div>

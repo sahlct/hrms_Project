@@ -12,6 +12,38 @@
 .semi_container{
     transition: 0.3s ease-in-out;
 }
+.notificationBtn .dot{
+    right: 118px;
+}
+.profileImage{
+    margin-right: 40px;
+}
+.textHead{
+    flex-direction: column;
+    justify-content: center;
+    align-items: start; 
+    padding-right: 5px;
+}
+.col{
+    height: 80px;
+    gap: 20px;
+    width: 31%;
+    border-radius: 20px;
+}
+.row{
+    gap: 20px;
+    flex-wrap: nowrap;
+}
+.mainIcon{
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    /* background-color: #eaedff; */
+}
+.IconParent{
+    justify-content: end;
+    align-items: center;
+}
 @media screen and (max-width: 1100px) {
     .semi_container{
         flex-wrap: wrap;
@@ -39,6 +71,14 @@
         width: 50%;
     }
 }
+@media screen and (max-width:991px){
+    .notificationBtn .dot{
+        right: 90px;
+    }
+    .profileImage{
+        margin-right: 20px;
+    }
+}
 @media screen and (max-width:670px) {
     .rightContainer{
         flex-direction: column;
@@ -48,4 +88,42 @@
         width: 100%;
         margin: 0;
     }
+}
+@media screen and (max-width:600px) {
+    .textHead{
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+    .col{
+        height: 40px;
+        gap: 10px;
+        min-width: 200px;
+        border-radius: 8px;
+        max-width: 300px;
+    }
+    .row{
+        gap: 10px;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
+    .mainIcon{
+        height: 20px;
+        width: 20px;
+        border-radius: 50%;
+        /* background-color: #eaedff; */
+    }
+    .IconParent{
+        justify-content: center;
+        align-items: center;
+    }
+    .rightSide button{
+        display: none;
+    }
+    .centerSide{
+        display: none;
+    }
+    
+    
 }
