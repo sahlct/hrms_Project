@@ -1,3 +1,6 @@
+.MainGraphs,.MainTasks{
+    width: 50%;
+}
 th{
     font-weight: 600;
     font-size: 15px;
@@ -24,3 +27,11 @@ th:first-child {
     align-items: center;
     justify-content: center;
 } */
+@media screen and (max-width: 700px) {
+    .taskConatiner {
+        flex-wrap: wrap;
+    }
+    .MainGraphs,.MainTasks{
+        width: 100%;
+    }
+}

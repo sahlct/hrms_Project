@@ -6,9 +6,13 @@
 }
 .empContainer td,th{
     padding: 10px 30px;
+    font-size: clamp(12px, 1.6vw, 17px);
 }
 .empFooter{
     padding: 5px 30px;
+}
+.empFooter p{
+    font-size: clamp(12px, 1.6vw, 17px);
 }
 .empContainer td,.empFooter{
     font-weight: 600;
@@ -17,7 +21,7 @@
 .empContainer th{
     color: #ffffff;
     font-weight: 700;
-    font-size: 17px;
+    
 }
 
 .empContainer table {
@@ -60,4 +64,9 @@ tr:hover{
 }
 .dropdown-item{
     margin-bottom: 0;
+}
+@media screen and (max-width:700px) {
+    .empContainer td,th{
+        padding: 5px 10px;
+    }
 }

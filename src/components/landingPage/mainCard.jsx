@@ -61,7 +61,7 @@ export default function EmployeeList() {
           </tbody>
         </table>
         <div className="empFooter d-flex justify-content-between align-items-center ">
-          <p style={{ height: "50px", fontSize: "14px", color: "grey"}} className="d-flex align-items-center mb-0">
+          <p style={{ height: "50px", color: "grey"}} className="d-flex align-items-center mb-0">
             Showing 1 to 3 of 45 Entries
           </p>
           <div className="d-flex gap-3">
