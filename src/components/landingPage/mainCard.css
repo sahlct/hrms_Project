@@ -2,7 +2,7 @@
 .empContainer{
     width: 100%;
     background-color: #f3eaa0;
-    padding: 10px 20px 0 20px;
+    padding: 0px 20px 0 20px;
 }
 .empContainer td,th{
     padding: 10px 30px;
@@ -12,6 +12,7 @@
 }
 .empContainer td,.empFooter{
     font-weight: 600;
+    cursor: pointer;
 }
 .empContainer th{
     color: #ffffff;
@@ -53,4 +54,10 @@
     align-items: center;
     border-radius: 50%;
     border: 1px solid grey;
+}
+tr:hover{
+    background-color: rgb(207, 227, 235);
+}
+.dropdown-item{
+    margin-bottom: 0;
 }

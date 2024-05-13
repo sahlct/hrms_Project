@@ -7,8 +7,8 @@ export default function Notes() {
       <div className="noteContainer d-flex flex-column gap-4">
         {/* <div class="container"> */}
         <div className="d-flex justify-content-between align-items-center ps-3 pe-3">
-          <h5 style={{fontWeight:'700'}} className="mb-0 text-white">Notes</h5>
-          <button type="button" class="btn btn-light d-flex align-items-center" style={{height:'30px'}}>
+          <h5 style={{fontWeight:'700'}} className="mb-0 text-black">Notes</h5>
+          <button type="button" class="btn btn-secondary d-flex align-items-center" style={{height:'30px'}}>
           <i class="bi bi-plus"></i> Add
           </button>
         </div>

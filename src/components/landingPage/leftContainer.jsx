@@ -12,10 +12,12 @@ export default function LeftContainer() {
         <div
           class="col rounded-4 p-0 overflow-hidden d-flex align-items-center gap-4 "
           style={{
-            maxWidth: "260px",
-            minWidth: "260px",
+            // maxWidth: "260px",
+            // minWidth: "260px",
+            width:'31%',
             border: "2px solid grey",
-            height:'80px'
+            height:'80px',
+            boxShadow:'rgba(100, 100, 111, 0.2) 0px 7px 5px 0px'
           }}
         >
           <div className="h-100  d-flex justify-content-end align-items-center " style={{width:'30%'}}>
@@ -29,10 +31,12 @@ export default function LeftContainer() {
         <div
           class="col rounded-4 p-0 overflow-hidden d-flex align-items-center gap-4 "
           style={{
-            maxWidth: "260px",
-            minWidth: "260px",
+            // maxWidth: "260px",
+            // minWidth: "260px",
+            width:'31%',
             border: "2px solid grey",
-            height:'80px'
+            height:'80px',
+            boxShadow:'rgba(100, 100, 111, 0.2) 0px 7px 5px 0px'
           }}
         >
           <div className="h-100  d-flex justify-content-end align-items-center " style={{width:'30%'}}>
@@ -46,10 +50,12 @@ export default function LeftContainer() {
         <div
           class="col rounded-4 p-0 overflow-hidden d-flex align-items-center gap-4 "
           style={{
-            maxWidth: "260px",
-            minWidth: "260px",
+            // maxWidth: "260px",
+            // minWidth: "260px",
+            width:'31%',
             border: "2px solid grey",
-            height:'80px'
+            height:'80px',
+            boxShadow:'rgba(100, 100, 111, 0.2) 0px 7px 5px 0px'
           }}
         >
           <div className="h-100  d-flex justify-content-end align-items-center " style={{width:'30%'}}>

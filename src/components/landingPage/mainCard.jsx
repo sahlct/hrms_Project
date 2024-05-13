@@ -3,7 +3,7 @@ import "./mainCard.css";
 
 export default function EmployeeList() {
   return (
-    <div className="pe-4">
+    <div style={{paddingRight:'20px'}}>
       <div className="empContainer rounded-4">
         <div className="empHeader d-flex justify-content-between p-3 align-items-center ">
           <h6 style={{fontWeight:'600', paddingLeft:'20px'}}>Employees</h6>
@@ -17,7 +17,7 @@ export default function EmployeeList() {
             >
               <i class="lni lni-list"></i>filter
             </button>
-            <ul class="dropdown-menu">
+            <ul class="dropdown-menu p-0 ">
               <li>
                 <p class="dropdown-item">Job Title</p>
               </li>
