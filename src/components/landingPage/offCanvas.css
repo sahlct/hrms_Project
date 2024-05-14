@@ -13,7 +13,7 @@
 }
 .button_Container:hover{
     color: white;
-    background-color: #725cff;
+    background-color: #174b3f;
 }
 .button_Container:hover .icons{
     color: white;
@@ -56,7 +56,7 @@
     align-items: flex-start;
 }
 .accordion-body button:hover{
-    background-color: #725cff;
+    background-color: #174b3f;
 }
 .accordion-body{
     padding: 0;

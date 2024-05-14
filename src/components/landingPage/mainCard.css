@@ -1,12 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 .empContainer{
     width: 100%;
-    background-color: #f3eaa0;
+    background-color: #9dc98e;
     padding: 0px 20px 0 20px;
 }
 .empContainer td,th{
     padding: 10px 30px;
     font-size: clamp(12px, 1.6vw, 17px);
+}
+.dropdown-toggle{
+    background-color: #4d774f;
 }
 .empHeader{
     padding: 1rem;
@@ -31,14 +34,14 @@
     width: 100%;
 }
 
-.empContainer th, td {
+.empContainer td {
     /* padding: 10px; */
     text-align: left;
     border-bottom: 1px solid #ddd;
 }
 
 .empContainer th {
-    background-color: #007bff; /* Blue color */
+    background-color: #4d774f; /* Blue color */
     color: #fff; /* White text */
 }
 .empContainer th:first-child {

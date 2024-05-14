@@ -9,7 +9,7 @@ export default function EmployeeList() {
           <h6 style={{paddingLeft:'20px'}}>Employees</h6>
           <div className="dropdown">
             <button
-              class="btn dropdown-toggle d-flex justify-content-between align-items-center gap-2 bg-primary"
+              class="btn dropdown-toggle d-flex justify-content-between align-items-center gap-2 "
               type="button"
               data-bs-toggle="dropdown"
               aria-expanded="false"

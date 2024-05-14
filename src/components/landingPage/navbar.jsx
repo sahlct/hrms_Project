@@ -25,7 +25,7 @@ export default function Navbar({
   return (
     <div
       style={{
-        backgroundColor: "#725cff",
+        backgroundColor: "#174b3f",
         position: "fixed",
         top: "0",
         width: "100%",
@@ -38,14 +38,14 @@ export default function Navbar({
           <div className="leftSide d-flex align-items-center ps-lg-4 ps-sm-1 justify-content-center ">
             <button class="btn" type="button" onClick={() => settingWidth()}>
               <i
-                style={{ fontSize: "25px", color: "black" }}
+                style={{ fontSize: "25px", color: "white" }}
                 class="bi bi-list"
               ></i>
             </button>
 
             <h1
               class="navbar-brand ms-lg-5 ms-sm-1 d-flex align-items-center justify-content-center pb-0"
-              style={{ color: "black", fontSize: "25px" }}
+              style={{ color: "white", fontSize: "25px" }}
             >
               Circle <span style={{ fontWeight: "700" }}>Soft</span>
             </h1>

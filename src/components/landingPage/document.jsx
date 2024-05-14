@@ -7,19 +7,19 @@ export default function Document() {
         <div>
             <h5 className=' mb-3 ms-3 '>Documents</h5>
             <p className='text-black d-flex align-items-center pointer' style={{fontWeight:'500'}}>
-                <i class="lni lni-files" style={{fontSize:'25px'}}></i> signed Documents 
+                <i class="lni lni-folder" style={{fontSize:'20px'}}></i> signed Documents 
                 <span style={{fontWeight:'500',color:'grey'}}>{count + 10}</span>
             </p>
             <p className='text-black d-flex align-items-center' style={{fontWeight:'500'}}>
-                <i class="lni lni-files" style={{fontSize:'25px'}}></i> Tasklist Attachments 
+                <i class="lni lni-folder" style={{fontSize:'20px'}}></i> Tasklist Attachments 
                 <span style={{fontWeight:'500',color:'grey'}}>{count}</span>
             </p>
             <p className='text-black d-flex align-items-center' style={{fontWeight:'500'}}>
-                <i class="lni lni-files" style={{fontSize:'25px'}}></i> Workflow Attachments 
+                <i class="lni lni-folder" style={{fontSize:'20px'}}></i> Workflow Attachments 
                 <span style={{fontWeight:'500',color:'grey'}}>{count + 3}</span>
             </p>
             <p className='text-black d-flex align-items-center' style={{fontWeight:'500'}}>
-                <i class="lni lni-files" style={{fontSize:'25px'}}></i> Non-disclosure Documents 
+                <i class="lni lni-folder" style={{fontSize:'20px'}}></i> Non-disclosure Documents 
                 <span style={{fontWeight:'500',color:'grey'}}>{count - 2}</span>
             </p>
             <button className='btn bg-black text-white w-100'><i class="lni lni-upload"></i> Upload Files</button>

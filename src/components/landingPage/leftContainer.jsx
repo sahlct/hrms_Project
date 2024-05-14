@@ -23,8 +23,8 @@ export default function LeftContainer() {
           <div className="IconParent h-100  d-flex">
             <div className="mainIcon d-flex justify-content-center align-items-center" style={{backgroundColor:'#eaedff'}}><i class="bi bi-people" style={{fontSize:'25px', color:'blue'}}></i></div>   
           </div>
-          <div className="textHead d-flex h-100 gap-1">
-            <div className="headerText" style={{ fontSize: "clamp(12px, 1.2vw, 17px)", fontWeight: "700" }} >Total Employees</div>
+          <div className="textHead d-flex h-100">
+            <div className="headerText">Total Employees</div>
             <div className="countText" style={{ fontSize: "clamp(20px, 2vw, 30px)", fontWeight: "700"}}>735</div>
           </div>
         </div>
@@ -42,9 +42,9 @@ export default function LeftContainer() {
           <div className="IconParent h-100  d-flex">
             <div className="mainIcon d-flex justify-content-center align-items-center" style={{backgroundColor:'#e3fdd9' }}><i class="bi bi-person-check" style={{fontSize:'25px', color:'green'}}></i></div>   
           </div>
-          <div className="textHead d-flex  h-100 gap-1">
-            <div className="headerText" style={{ fontSize: "clamp(12px, 1.2vw, 17px)", fontWeight: "700" }} >Toady's Attendence</div>
-            <div className="countText" style={{fontSize: "clamp(20px, 2vw, 30px)", fontWeight: "700"}}>97%</div>
+          <div className="textHead d-flex  h-100">
+            <p className="headerText">Toady's Attendence</p>
+            <p className="countText" style={{fontSize: "clamp(20px, 2vw, 30px)", fontWeight: "700"}}>97%</p>
           </div>
         </div>
         <div
@@ -61,8 +61,8 @@ export default function LeftContainer() {
           <div className="IconParent h-100  d-flex">
             <div className="mainIcon d-flex justify-content-center align-items-center" style={{backgroundColor:'#fde9cf'}}><i class="bi bi-person-x" style={{fontSize:'25px', color:'orange'}}></i></div>   
           </div>
-          <div className="textHead d-flex h-100 gap-1" >
-            <div className="headerText" style={{  fontSize: "clamp(12px, 1.2vw, 17px)", fontWeight: "700" }} >Leave Employees</div>
+          <div className="textHead d-flex h-100" >
+            <div className="headerText">Leave Employees</div>
             <div className="countText" style={{fontSize: "clamp(20px, 2vw, 30px)", fontWeight: "700"}}>12</div>
           </div>
         </div>
