@@ -124,6 +124,12 @@
     .centerSide{
         display: none;
     }
+    .countText{
+        width: 30%;
+    }
+    .headerText{
+        width: 70%;
+    }
     
     
 }

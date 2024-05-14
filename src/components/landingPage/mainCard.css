@@ -8,6 +8,9 @@
     padding: 10px 30px;
     font-size: clamp(12px, 1.6vw, 17px);
 }
+.empHeader{
+    padding: 1rem;
+}
 .empFooter{
     padding: 5px 30px;
 }
@@ -20,8 +23,7 @@
 }
 .empContainer th{
     color: #ffffff;
-    font-weight: 700;
-    
+    font-weight: 700;  
 }
 
 .empContainer table {
@@ -42,7 +44,9 @@
 .empContainer th:first-child {
     border-radius: 10px 0 0 10px; /* Rounded top-left corner */
 }
-
+.empHeader h6{
+    font-weight: 600;
+}
 .empContainer th:last-child {
     border-radius: 0 10px 10px 0; /* Rounded top-right corner */
 }
@@ -65,8 +69,28 @@ tr:hover{
 .dropdown-item{
     margin-bottom: 0;
 }
+.paginationCount {
+    gap: 1rem;
+}
 @media screen and (max-width:700px) {
     .empContainer td,th{
         padding: 5px 10px;
+        font-weight: 500;
     }
+    .empHeader{
+        padding: 10px 0;
+    }
+    .empContainer{
+        padding: 0 10px;
+    }
+    .empContainer th{
+        font-weight: 500;  
+    }
+    .paginationCount {
+        gap: 5px;
+    }
+    .empFooter{
+        padding: 0;
+    }
+    
 }

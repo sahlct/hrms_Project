@@ -5,9 +5,9 @@ export default function EmployeeList() {
   return (
     <div style={{paddingRight:'20px'}}>
       <div className="empContainer rounded-4">
-        <div className="empHeader d-flex justify-content-between p-3 align-items-center ">
-          <h6 style={{fontWeight:'600', paddingLeft:'20px'}}>Employees</h6>
-          <div class="dropdown">
+        <div className="empHeader d-flex justify-content-between align-items-center ">
+          <h6 style={{paddingLeft:'20px'}}>Employees</h6>
+          <div className="dropdown">
             <button
               class="btn dropdown-toggle d-flex justify-content-between align-items-center gap-2 bg-primary"
               type="button"
@@ -64,7 +64,7 @@ export default function EmployeeList() {
           <p style={{ height: "50px", color: "grey"}} className="d-flex align-items-center mb-0">
             Showing 1 to 3 of 45 Entries
           </p>
-          <div className="d-flex gap-3">
+          <div className="paginationCount d-flex">
             <div className="counts">1</div>
             <div className="counts">2</div>
             <div className="counts">3</div>
