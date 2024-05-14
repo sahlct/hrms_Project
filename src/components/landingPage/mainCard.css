@@ -82,6 +82,7 @@ tr:hover{
     }
     .empContainer{
         padding: 0 10px;
+        overflow: auto;
     }
     .empContainer th{
         font-weight: 500;  
@@ -91,6 +92,11 @@ tr:hover{
     }
     .empFooter{
         padding: 0;
+    }
+    .empContainer .counts{
+        height: 20px;
+        width: 20px;
+        font-size: 10px;
     }
     
 }
